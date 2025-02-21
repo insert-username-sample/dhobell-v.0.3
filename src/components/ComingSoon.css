@@ -19,7 +19,7 @@
 }
 
 .washer-container {
-  margin: 2rem 0;
+  margin: 8rem 0 4rem 0;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);

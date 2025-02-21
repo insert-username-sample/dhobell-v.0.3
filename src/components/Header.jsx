@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
+import logo from '../logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ function Header() {
     <header className="header">
       <div className="header-content">
         <div className="logo-container">
-          <Link to="/">Dhobell</Link>
+          <Link to="/"><img src={logo} alt="Dhobell Logo" className="logo" /></Link>
         </div>
         <button className="menu-toggle" onClick={toggleMenu}>
           <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
